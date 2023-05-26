@@ -2,4 +2,4 @@ PHP Library to Wrap Mondial Relay API
 
 ## Installation
 
-composer require xaviborja/php-mondialrelay-api
+composer require itlatostadora/php-mondialrelay-api
