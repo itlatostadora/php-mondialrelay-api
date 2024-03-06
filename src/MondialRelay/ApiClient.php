@@ -28,7 +28,7 @@ class ApiClient
             $pointFactory = new PointFactory();
             $this->checkResponse('WSI4_PointRelais_RechercheResult', $result);
             $delivery_points = [];
-            if (!property_exists($result->WSI4_PointRelais_RechercheResult->PointsRelais, 'PointRelais_Details')) {
+            if (!isset($result->WSI4_PointRelais_RechercheResult->PointsRelais->PointRelais_Details)) {
                 return $delivery_points;
             }
             if (is_object($result->WSI4_PointRelais_RechercheResult->PointsRelais->PointRelais_Details)) {

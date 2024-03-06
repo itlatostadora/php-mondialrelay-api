@@ -23,8 +23,8 @@ class PointFactory
             $response->Ville,
             $response->Pays,
             [
-                isset($response->Localisation1) ? $response->Localisation1 : '',
-                isset($response->Localisation2) ? $response->Localisation2 : ''
+                $response->Localisation1 ?? '',
+                $response->Localisation2 ?? ''
             ],
             $response->TypeActivite,
             $response->Information,
